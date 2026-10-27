@@ -15,32 +15,32 @@ export const UNITS: Unit[] = [
 export const TOURS: Tour[] = [
   {
     id: "t1",
-    name: "City & Heritage Day Tour",
+    name: "Tacloban & Palo Heritage Day Tour",
     type: "DAY_6H",
     basePrice: 4500,
     maxPax: 15,
     startSlots: ["06:00", "08:00", "13:00"],
-    itinerary: ["Old churches & plaza", "Local market food stop", "Heritage houses", "Pasalubong center"],
+    itinerary: ["Santo Niño Shrine & Heritage Museum", "San Juanico Bridge viewpoint", "MacArthur Landing Memorial, Palo", "Pasalubong stop (binagol, moron)"],
     includes: ["Driver", "Fuel", "Parking"],
   },
   {
     id: "t2",
-    name: "Beach & Falls Day Tour",
+    name: "Samar Side Trip Day Tour",
     type: "DAY_6H",
     basePrice: 5500,
     maxPax: 15,
     startSlots: ["05:00", "07:00"],
-    itinerary: ["Falls & swimming", "Lunch by the beach", "Sunset viewpoint"],
+    itinerary: ["Cross San Juanico Bridge", "Basey, Samar", "Lunch stop", "Itinerary to confirm with Nole"],
     includes: ["Driver", "Fuel", "Tolls"],
   },
   {
     id: "t3",
-    name: "Province Loop (Long-term Tour)",
+    name: "Leyte Loop (Long-term Tour)",
     type: "LONG_TERM",
     basePrice: 6000,
     maxPax: 15,
     minDays: 2,
-    itinerary: ["Day 1: north towns & beaches", "Day 2: mountain resort", "Day 3+: free itinerary with driver"],
+    itinerary: ["Day 1: Ormoc & Lake Danao", "Day 2: Palompon (Kalanggaman Island boat not included)", "Day 3+: free itinerary with driver"],
     includes: ["Driver", "Fuel up to 200 km/day"],
   },
 ];
@@ -66,7 +66,7 @@ export function buildSeed(): AppState {
   const bookings: Booking[] = [
     {
       id: "b1", code: "247-K3F9", customerId: "c1", unitId: "u2", serviceType: "SELF_DRIVE",
-      startAt: at(1, 8), endAt: at(3, 8), pax: 5, pickupLocation: "Robinsons Place, main entrance",
+      startAt: at(1, 8), endAt: at(3, 8), pax: 5, pickupLocation: "Robinsons Marasbaras, main entrance",
       total: 5600, depositDue: 1700, securityDeposit: 3000, lockIn: "GCASH_PAYMONGO", status: "CONFIRMED",
       createdBy: "CUSTOMER", createdAt: now,
       payments: [{ id: "p1", kind: "DEPOSIT", method: "GCASH_PAYMONGO", amount: 1700, referenceNo: "pay_test_8812", status: "VERIFIED", createdAt: now, verifiedAt: now }],
@@ -75,7 +75,7 @@ export function buildSeed(): AppState {
     },
     {
       id: "b2", code: "247-P7QX", customerId: "c2", unitId: "u5", tourId: "t1", serviceType: "DAY_TOUR",
-      startAt: at(0, 13), endAt: at(0, 19), pax: 10, pickupLocation: "SM City, Entrance 2",
+      startAt: at(0, 13), endAt: at(0, 19), pax: 10, pickupLocation: "Robinsons North, Entrance 2",
       total: 4500, depositDue: 1400, securityDeposit: 0, lockIn: "MANUAL", status: "PENDING_VERIFICATION",
       createdBy: "CUSTOMER", createdAt: now,
       payments: [{ id: "p2", kind: "DEPOSIT", method: "GCASH_MANUAL", amount: 1400, referenceNo: "5012 334 889201", proofFileName: "gcash-receipt.jpg", status: "PENDING", createdAt: now }],
@@ -92,7 +92,7 @@ export function buildSeed(): AppState {
     },
     {
       id: "b4", code: "247-H8DW", customerId: "c1", unitId: "u1", serviceType: "WITH_DRIVER",
-      startAt: at(-1, 7), endAt: at(0, 19), pax: 3, pickupLocation: "Airport arrival area",
+      startAt: at(-1, 7), endAt: at(0, 19), pax: 3, pickupLocation: "Tacloban Airport arrival area",
       total: 5600, depositDue: 1700, securityDeposit: 0, lockIn: "GCASH_PAYMONGO", status: "ONGOING",
       createdBy: "CUSTOMER", createdAt: now,
       payments: [{ id: "p3", kind: "DEPOSIT", method: "GCASH_PAYMONGO", amount: 1700, referenceNo: "pay_test_7710", status: "VERIFIED", createdAt: now, verifiedAt: now }],

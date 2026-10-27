@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 import HoldSweeper from "@/components/HoldSweeper";
 
 export const metadata: Metadata = {
-  title: "24/7 Rentals & Tours",
+  title: "24/7 RideSafe · Car Rental & Tours, Tacloban",
   description: "Book a vehicle, a 6-hour day tour or a long-term tour. Pay the deposit by GCash or bank transfer.",
 };
 

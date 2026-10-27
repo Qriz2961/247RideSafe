@@ -6,6 +6,7 @@ import AgreementText from "@/components/AgreementText";
 import PaymentPanel from "@/components/PaymentPanel";
 import StatusBadge from "@/components/StatusBadge";
 import UnitPhoto from "@/components/UnitPhoto";
+import { BUSINESS } from "@/lib/config";
 import { dateTime, METHOD_LABEL, peso, prettyMobile, SERVICE_LABEL } from "@/lib/format";
 import { balanceLeft, normalizeMobile, paidSoFar, refundFor } from "@/lib/logic";
 import { requestCancel, useAppState } from "@/lib/store";
@@ -148,7 +149,7 @@ function BookingCard({ b, state, now }: { b: Booking; state: AppState; now: numb
         {b.status === "HELD" && <button className="btn-primary btn-sm" onClick={() => setOpen(open === "pay" ? null : "pay")}>Pay deposit</button>}
         {b.agreement && <button className="btn-ghost btn-sm" onClick={() => setOpen(open === "agreement" ? null : "agreement")}>Agreement</button>}
         {canCancel && <button className="btn-ghost btn-sm" onClick={() => setOpen(open === "cancel" ? null : "cancel")}>Cancel</button>}
-        <a className="btn-ghost btn-sm" href="https://m.me/" target="_blank" rel="noreferrer">Message Nole</a>
+        <a className="btn-ghost btn-sm" href={BUSINESS.messenger} target="_blank" rel="noreferrer">Message Nole</a>
       </div>
 
       {open === "pay" && b.status === "HELD" && <div className="border-t border-slate-100 p-4"><PaymentPanel booking={b} /></div>}
