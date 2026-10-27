@@ -11,11 +11,13 @@ export const C = {
   ok: "#059669",
 };
 
-// Placeholders until Nole gives the real links (PLAN.md section 2.1, step 7).
+import { BUSINESS } from "./shared";
+
 export const CONTACT = {
-  phone: "09170000000",
-  messenger: "https://m.me/",
-  viber: "viber://chat?number=%2B639170000000",
+  phone: BUSINESS.phone,
+  email: BUSINESS.email,
+  messenger: "https://m.me/", // placeholder until the Facebook page link is known
+  viber: `viber://chat?number=%2B63${BUSINESS.phone.slice(1)}`,
 };
 
 // Demo-only gate for the owner tab. Stage 4 replaces it with Nole's real log-in.

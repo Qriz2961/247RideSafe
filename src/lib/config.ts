@@ -5,6 +5,10 @@ export const BUSINESS = {
   name: "24/7 Rentals & Tours",
   owner: "Nole Candizo",
   smsSender: "247RENTALS",
+  // Customer-facing contact. The owner's own numbers are kept out of the app on
+  // purpose; Stage 5 reads them from OWNER_ALERT_MOBILES on the server.
+  phone: "09206118147",
+  email: "twentyfoursevencarrentalandtour@gmail.com",
   // Placeholders: replace with Nole's real accounts before going live.
   gcashName: "NOLE C.",
   gcashNumber: "0917 000 0000",

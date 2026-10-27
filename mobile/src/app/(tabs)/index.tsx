@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import { Linking, Text, View } from "react-native";
 import { Card, Choice, H2, Label, Muted, Screen } from "../../components/ui";
-import { BUSINESS, peso, type ServiceType } from "../../lib/shared";
+import { BUSINESS, peso, prettyMobile, type ServiceType } from "../../lib/shared";
 import { useAppState } from "../../lib/store";
 import { C, CONTACT } from "../../lib/theme";
 
@@ -50,17 +50,19 @@ export default function Home() {
 
       <Card>
         <Label>Questions? Message {BUSINESS.owner.split(" ")[0]}</Label>
-        <View style={{ flexDirection: "row", gap: 8 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
           {[
             ["📞 Call", `tel:${CONTACT.phone}`],
             ["💬 Messenger", CONTACT.messenger],
             ["🟣 Viber", CONTACT.viber],
+            ["✉️ Email", `mailto:${CONTACT.email}`],
           ].map(([label, url]) => (
-            <Choice key={label} style={{ flex: 1, alignItems: "center" }} onPress={() => Linking.openURL(url).catch(() => {})}>
+            <Choice key={label} style={{ width: "48.5%", alignItems: "center" }} onPress={() => Linking.openURL(url).catch(() => {})}>
               <Text style={{ fontWeight: "700", fontSize: 13 }}>{label}</Text>
             </Choice>
           ))}
         </View>
+        <Muted small>{prettyMobile(CONTACT.phone)} · {CONTACT.email}</Muted>
       </Card>
     </Screen>
   );
