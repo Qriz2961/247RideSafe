@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "24/7 Rentals & Tours",
+    "slug": "rentals-247",
+    "scheme": "rentals247",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ea580c"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "ph.rentals247.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "ph.rentals247.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#ea580c",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Used to attach your driver's license photo and your GCash or bank receipt to a booking.",
+          "cameraPermission": "Used to take a photo of your driver's license or payment receipt."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

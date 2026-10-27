@@ -1,6 +1,6 @@
 # 24/7 Rentals & Tours: booking app
 
-Stage 2 (front end) of the plan in [PLAN.md](PLAN.md). Flow picture: [booking-flow.svg](booking-flow.svg).
+Stage 2 (front end) of the plan in [PLAN.md](PLAN.md). Phone app for iOS and Android: [mobile/](mobile/README.md). Flow picture: [booking-flow.svg](booking-flow.svg).
 
 ## Run it
 

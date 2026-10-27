@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "../src/lib/config.ts",
+    "../src/lib/format.ts",
+    "../src/lib/logic.ts",
+    "../src/lib/types.ts",
+    "../src/lib/seed.ts"
+  ]
+}
