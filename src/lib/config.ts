@@ -5,7 +5,7 @@ export const BUSINESS = {
   name: "24/7 RideSafe",
   legalName: "Twenty Four Seven Ridesafe Car Rental And Tourist Transport OPC",
   address: "Brgy 88 Costa Brava, San Jose, Tacloban City, Leyte 6500",
-  owner: "Nole Candizo",
+  owner: "Nole Candiza",
   smsSender: "247RIDESAFE", // 11 characters, the most a PH sender name allows
   // Customer-facing contact. The owner's own numbers are kept out of the app on
   // purpose; Stage 5 reads them from OWNER_ALERT_MOBILES on the server.

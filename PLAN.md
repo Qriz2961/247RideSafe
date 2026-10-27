@@ -1,7 +1,7 @@
 # PLAN.md — 24/7 Vehicle Rental & Tours Booking App
 
 > Stage 1 of the 6-stage app playbook. **No code yet.** This file is the brief the AI coding tool will build from.
-> Owner: **Nole Candizo** · Drafted: 10 Oct 2026
+> Owner: **Nole Candiza** · Drafted: 10 Oct 2026
 
 ---
 
@@ -20,7 +20,7 @@
 | User | What they want | Device |
 |---|---|---|
 | **Customer** (local family, balikbayan, barkada, small company) | See what's free, book a unit or tour, pay the deposit, get a text reminder | Phone, often on mobile data, so pages must stay light |
-| **Owner** (Nole Candizo) | See every booking at a glance, confirm payments, block units for repair, know who picks up tomorrow | Phone first, laptop second |
+| **Owner** (Nole Candiza) | See every booking at a glance, confirm payments, block units for repair, know who picks up tomorrow | Phone first, laptop second |
 | **Driver / staff** (later) | See today's assignments only | Phone |
 
 **Services sold**
