@@ -1,4 +1,4 @@
-# 24/7 Rentals & Tours: phone app (iOS + Android)
+# 24/7 RideSafe: phone app (iOS + Android)
 
 Expo SDK 58 / React Native 0.88. Same Stage 2 scope as the web app: sample data, everything saved on the phone.
 
@@ -34,7 +34,7 @@ npx expo start          # scan the QR code with the Expo Go app (iPhone camera o
 | Owner tab | Demo PIN `2470` | Nole's own log-in; hidden from the public store build (Stage 4) |
 | GCash / QR Ph | "Simulate successful payment" | PayMongo hosted checkout opened with `expo-web-browser` + webhook (Stage 5) |
 | License / receipt photo | File name only | Upload to a private Supabase bucket (Stage 3–4) |
-| Text reminders | Owner's Texts tab | Semaphore, sender `247RENTALS` (Stage 5) |
+| Text reminders | Owner's Texts tab | Semaphore, sender `247RIDESAFE` (Stage 5) |
 | Call / Messenger / Viber links | Placeholder numbers in `src/lib/theme.ts` | Nole's real numbers |
 
 ## Store rules already handled

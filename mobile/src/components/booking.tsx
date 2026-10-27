@@ -46,7 +46,7 @@ export function Stepper({ value, onChange, min, max, suffix }: { value: number; 
   );
 }
 
-const TYPE_EMOJI: Record<Unit["type"], string> = { Sedan: "🚗", MPV: "🚙", SUV: "🛻", Van: "🚐" };
+const TYPE_EMOJI: Record<Unit["type"], string> = { Sedan: "🚗", Hatchback: "🚗", MPV: "🚙", SUV: "🛻", Van: "🚐" };
 
 export function UnitPhoto({ unit, height = 80 }: { unit: Unit; height?: number }) {
   const dark = unit.color === "#1e293b";

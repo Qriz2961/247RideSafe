@@ -17,7 +17,7 @@ export type LockInMethod = "GCASH_PAYMONGO" | "MANUAL" | "AGREEMENT_ONLY";
 export type PaymentKind = "DEPOSIT" | "BALANCE" | "REFUND";
 export type PaymentStatus = "PENDING" | "VERIFIED";
 
-export type UnitType = "Sedan" | "MPV" | "SUV" | "Van";
+export type UnitType = "Sedan" | "Hatchback" | "MPV" | "SUV" | "Van";
 
 export interface Unit {
   id: string;

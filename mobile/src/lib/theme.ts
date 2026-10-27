@@ -16,7 +16,7 @@ import { BUSINESS } from "./shared";
 export const CONTACT = {
   phone: BUSINESS.phone,
   email: BUSINESS.email,
-  messenger: "https://m.me/", // placeholder until the Facebook page link is known
+  messenger: BUSINESS.messenger,
   viber: `viber://chat?number=%2B63${BUSINESS.phone.slice(1)}`,
 };
 

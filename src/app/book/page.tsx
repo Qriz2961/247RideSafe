@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import BookingWizard from "./BookingWizard";
 
-export const metadata = { title: "Book · 24/7 Rentals & Tours" };
+export const metadata = { title: "Book · 24/7 RideSafe" };
 
 export default function BookPage() {
   return (

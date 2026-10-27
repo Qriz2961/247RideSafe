@@ -1,4 +1,4 @@
-# 24/7 Rentals & Tours: booking app
+# 24/7 RideSafe: booking app
 
 Stage 2 (front end) of the plan in [PLAN.md](PLAN.md). Phone app for iOS and Android: [mobile/](mobile/README.md). Flow picture: [booking-flow.svg](booking-flow.svg).
 
@@ -23,6 +23,6 @@ npm run dev        # http://localhost:3000
 | Slot check | Runs on screen **and** again when saving | Database overlap rule (Stage 3) |
 | SMS log-in code | Always `123456` | Supabase phone log-in (Stage 4) |
 | GCash / QR Ph | "Simulate successful payment" button | PayMongo hosted checkout + webhook (Stage 5) |
-| Text reminders | Shown in the owner's Texts tab | Semaphore with registered sender `247RENTALS` (Stage 5) |
+| Text reminders | Shown in the owner's Texts tab | Semaphore with registered sender `247RIDESAFE` (Stage 5) |
 
 House rules (deposit %, buffer, hold time, cancellation tiers) live in `src/lib/config.ts`. They are placeholders until Nole answers PLAN.md section 10.

@@ -2,13 +2,17 @@
 // until the open questions in PLAN.md section 10 are answered.
 
 export const BUSINESS = {
-  name: "24/7 Rentals & Tours",
+  name: "24/7 RideSafe",
+  legalName: "Twenty Four Seven Ridesafe Car Rental And Tourist Transport OPC",
+  address: "Brgy 88 Costa Brava, San Jose, Tacloban City, Leyte 6500",
   owner: "Nole Candizo",
-  smsSender: "247RENTALS",
+  smsSender: "247RIDESAFE", // 11 characters, the most a PH sender name allows
   // Customer-facing contact. The owner's own numbers are kept out of the app on
   // purpose; Stage 5 reads them from OWNER_ALERT_MOBILES on the server.
   phone: "09206118147",
-  email: "twentyfoursevencarrentalandtour@gmail.com",
+  email: "twentyfoursevencarrentalandtou@gmail.com", // Gmail caps names at 30 letters, so "tour" lost its "r"
+  facebook: "https://www.facebook.com/profile.php?id=61593358162245",
+  messenger: "https://m.me/61593358162245",
   // Placeholders: replace with Nole's real accounts before going live.
   gcashName: "NOLE C.",
   gcashNumber: "0917 000 0000",

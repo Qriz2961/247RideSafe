@@ -87,7 +87,7 @@
 | 4 | **Take the deposit or the signed agreement** | GCash via PayMongo: the payment provider tells our server it's paid (this message is called a *webhook*, basically the payment company "texting" our server) → status `CONFIRMED`. Bank/GCash screenshot → `PENDING_VERIFICATION` until Nole taps **Verify**. Agreement-only → trusted customers only, goes straight to `CONFIRMED`. | |
 | 5 | **Record the booking agreement** | Store the agreement version, typed name, tick-box, date/time, IP address, and a PDF copy. | Nole can pull the signed copy if there's a dispute or an accident |
 | 6 | **Save the booking** | Save with a short booking code, price breakdown and status history (who changed what, when). | |
-| 7 | **Text reminders** | SMS on: booking confirmed · 24 hrs before pickup · 2 hrs before pickup · 2 hrs before return (self-drive) · balance due. Sent via a PH SMS provider (e.g. Semaphore) under a **registered sender name** like `247RENTALS`. | Customer gets the text; it's logged |
+| 7 | **Text reminders** | SMS on: booking confirmed · 24 hrs before pickup · 2 hrs before pickup · 2 hrs before return (self-drive) · balance due. Sent via a PH SMS provider (e.g. Semaphore) under a **registered sender name** like `247RIDESAFE`. | Customer gets the text; it's logged |
 | 8 | **Handle the balance** | Balance method: **COD at pickup**, bank transfer or GCash. Nole marks it "collected" with amount and method. COD isn't marked paid until he taps it. | Cash count matches the app |
 | 9 | **Cancel and refund** | Apply Nole's policy automatically (example: 72+ hrs before = full deposit back or rebook; 24–72 hrs = 50%; under 24 hrs or no-show = forfeit). Refunds are done manually; the app only computes the amount and logs it. | |
 | 10 | **Tell Nole** | New booking / proof uploaded / cancellation → SMS or email to Nole. | |
@@ -140,7 +140,7 @@ Side exits: `EXPIRED` (hold ran out) · `CANCELLED` · `NO_SHOW`
 - Provider: **Semaphore** (PH-based; local rates) or Twilio (more expensive to PH numbers).
 - **Register the sender name first.** Unregistered alphanumeric sender IDs have been blocked by Globe/Smart since 2025. Expect paperwork: business documents (DTI/SEC), a Letter of Authorization per carrier, and sample messages. **Allow 1–3 weeks**; start this on day one, in parallel with the build.
 - Keep texts under 160 characters to avoid paying for 2 messages. Example:
-  `247: Hi Ana, pickup tomorrow 8AM, Innova ABC1234 @ Robinsons Iloilo. Balance P3,500 (COD/GCash). Ref 247-K3F9`
+  `247: Hi Ana, pickup tomorrow 8AM, Innova ABC1234 @ Tacloban Airport. Balance P3,500 (COD/GCash). Ref 247-K3F9`
 
 ---
 
@@ -199,5 +199,5 @@ Side exits: `EXPIRED` (hold ran out) · `CANCELLED` · `NO_SHOW`
 4. Day Tour: fixed start times? Fuel, tolls and parking included?
 5. Long-term Tour: driver's meals and lodging, who pays?
 6. Cancellation policy: OK with the 72h / 24h tiers above?
-7. Area: which city/province is the base? (Affects tour packages and SMS copy.)
+7. ~~Area~~ Answered: Tacloban City, Leyte (Brgy 88 Costa Brava, San Jose). Tours and sample data now use Leyte places.
 8. Business registration status: DTI/SEC, BIR, LTFRB?
